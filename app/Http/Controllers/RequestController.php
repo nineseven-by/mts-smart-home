@@ -35,6 +35,8 @@ class RequestController extends Controller
 
     public function mailingRequest(MailingRequest $request){
         $data = $request->validated();
+        $data['news'] = intval($data['news']);
+        $data['promotions'] = intval($data['promotions']);
         $mailing = new Mailing($data);
         $mailing->save();
         
