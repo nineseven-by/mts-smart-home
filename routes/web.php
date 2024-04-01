@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::post('request-order', [RequestController::class, 'orderRequest']);
 Route::post('request-consultation', [RequestController::class, 'consultationRequest']);
 Route::post('request-mailing', [RequestController::class, 'mailingRequest']);
+Route::post('request-suggestion', [RequestController::class, 'suggestionRequest']);
