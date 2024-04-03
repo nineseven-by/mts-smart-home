@@ -24,7 +24,7 @@ class SuggestionRequest extends FormRequest
         return [
             'fio' => 'required',
             'phone' => 'required',
-            'message' => 'required',
+            'message' => 'nullable',
             'email' => 'required',
             'theme' => 'required',
         ];
